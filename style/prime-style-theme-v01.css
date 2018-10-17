@@ -37,8 +37,7 @@ a:active{text-decoration: none;color: none;}
 {
 	width: 100%;
 	height: auto;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
 .header-wrapper
@@ -47,6 +46,7 @@ a:active{text-decoration: none;color: none;}
 	height: 100%;
 	display: inline-flex;
 	text-align: center;
+	padding-bottom: 30px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
@@ -97,7 +97,7 @@ a:active{text-decoration: none;color: none;}
 
 .action-ico-container
 {
-	margin-top: 40px;
+	margin-top: 50px;
 }
 
 .fas-global-ico
