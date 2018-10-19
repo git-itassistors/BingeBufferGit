@@ -11,8 +11,23 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 	
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAHY-2HvCfkOcAb-zAW3hyV_DdHbDOnDhE",
+		authDomain: "binge-buffer.firebaseapp.com",
+		databaseURL: "https://binge-buffer.firebaseio.com",
+		projectId: "binge-buffer",
+		storageBucket: "binge-buffer.appspot.com",
+		messagingSenderId: "564639419061"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
   	<script src="scripts/bootstrap.js"></script>
-  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
 	<script type="text/javascript" src="scripts/prime-activity-script-v01.js"></script>
@@ -29,15 +44,44 @@
 					<div class="logo-wrapper col-xs-6" id="logo-wrapper">&nbsp;</div>
 					<div class="logo-label col-xs-6">inge Buffer</div>
 				</div>
-				<ul class="menu-roller col-8 text-center ml-md-5 mr-md-6">
+				
+				<ul class="menu-roller col-6 text-center ml-md-5 mr-md-6">
 					<li>HOT NOW</li>
 					<li>CATEGORIES &nbsp; <i class="fas fa-angle-down"></i></li>
 					<li>TOPPERS</li>
 					<li>LATEST DROPS</li>
 				</ul>
-				<div class="action-ico-container col-xs-6">
-					<i class="fas fa-search fa-2x search-ico fas-global-ico" style="color:#939393;"></i>
-					<i class="fas fa-user fa-2x user-ico fas-global-ico" style="color:#939393;"></i>
+				
+				<div class="action-ico-container col-2 mr-ml-6">
+					
+					<div class="global-ico-wrapper row">
+						
+						<div class="dummy-col col-6 mr-ml-6">&nbsp;</div>
+						
+						<div class="g-ico-x col-3">
+							<i class="fas fa-search fa-2x search-ico fas-global-ico outer-search-ico" style="color:#939393;"></i>
+						</div>
+						
+						<div class="searchbar-wrapper col-6">
+							<div class="search-txt row">
+								<div class="searchbox-cnt col-8">
+									<input type="text" class = "search-lightbox col-10" placeholder="what ya looking for?" />
+								</div>
+								
+								<div class="searchbox-cnt col-2">
+									<i class="fas fa-search search-ico inline-fa-searchbox fas-global-ico" style="color:#939393;font-size: 20px;"></i>
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class="g-ico-x col-1">
+							<i class="fas fa-user fa-2x user-ico fas-global-ico" style="color:#939393;"></i>
+						</div>
+
+					
+					</div>
+					
 				</div>
 			</div>
 			
