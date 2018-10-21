@@ -42,30 +42,30 @@
 	<div class="header-navbar">
 		<div class="header-wrapper container-fluid" id="head-wrapper">
 
-			<div class="roll-main-cnt container-fluid row">
+			<div class="roll-main-cnt container-fluid row" ng-controller="globalController">
 				<div class="col-2 logo-content row mr-md-5 ml-md-5">
 					<div class="logo-wrapper col-xs-6" id="logo-wrapper">&nbsp;</div>
 					<div class="logo-label col-xs-6">inge Buffer</div>
 				</div>
 
-				<ul class="menu-roller col-6 text-center ml-md-5 mr-md-6" ng-controller="menuController">
-					<li>HOT NOW</li>
-					<li ng-click="catListToggle()">CATEGORIES &nbsp; <i class="fas fa-angle-down"></i></li>
-					<li>TOPPERS</li>
-					<li>LATEST DROPS</li>
+				<ul class="menu-roller col-6 text-center ml-md-5 mr-md-6">
+					<li class="menu-item hot-menu">HOT NOW</li>
+					<li ng-click="clickActivator('categorySwitch')" class="menu-item category-menu">CATEGORIES &nbsp; <i class="fas fa-angle-down"></i></li>
+					<li class="menu-item trend-menu">TOPPERS</li>
+					<li class="menu-item latest-menu">LATEST DROPS</li>
 				</ul>
 
-				<div class="action-ico-container col-2 mr-ml-6" ng-controller="globalIcoController">
+				<div class="action-ico-container col-2 mr-ml-6">
 
 					<div class="global-ico-wrapper row">
 
 						<div class="dummy-col col-6 mr-ml-6">&nbsp;</div>
 
-						<div class="g-ico-x col-3 search-toggle" ng-click="toggleSearchbar()">
+						<div class="g-ico-x col-3 search-toggle" ng-click="clickActivator('searchSwitch')">
 							<i class="fas fa-search fa-2x search-ico fas-global-ico outer-search-ico" style="color:#939393;"></i>
 						</div>
 
-						<div class="g-ico-x col-1" ng-click="toggleAuthBubble()">
+						<div class="g-ico-x col-1" ng-click="clickActivator('authSwitch')">
 							<i class="fas fa-user fa-2x user-ico fas-global-ico" style="color:#939393;"></i>						
 						</div>
 						
