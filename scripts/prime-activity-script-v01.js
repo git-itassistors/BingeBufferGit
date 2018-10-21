@@ -29,7 +29,7 @@ bingeBufferApp.controller('globalController', ['$scope', function($scope){
 		}
 		else if( bundle == 'authSwitch' )
 		{
-			$('.auth-bubble').slideToggle(500);
+			$('.auth-bubble').slideToggle(250);
 		
 			if( $scope.authSwitch == undefined )
 			{
