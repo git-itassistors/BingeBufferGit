@@ -223,7 +223,12 @@ a:active{text-decoration: none;color: none;}
 .cat-list-inline-container
 {
 	width: 100%;
-	margin-left: 5% !important;
+	text-align: center;
+}
+
+.cat-ico
+{
+	margin-right: 10px;
 }
 
 .cat-label
