@@ -11,8 +11,10 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 	
 	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="scripts/jquery-ui.js"></script>
 
 	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
 	<script>
@@ -46,9 +48,9 @@
 					<div class="logo-label col-xs-6">inge Buffer</div>
 				</div>
 
-				<ul class="menu-roller col-6 text-center ml-md-5 mr-md-6">
+				<ul class="menu-roller col-6 text-center ml-md-5 mr-md-6" ng-controller="menuController">
 					<li>HOT NOW</li>
-					<li>CATEGORIES &nbsp; <i class="fas fa-angle-down"></i></li>
+					<li ng-click="catListToggle()">CATEGORIES &nbsp; <i class="fas fa-angle-down"></i></li>
 					<li>TOPPERS</li>
 					<li>LATEST DROPS</li>
 				</ul>
@@ -89,25 +91,70 @@
 				</div>
 			</div>
 
-      <div class="searchbar-wrapper">
-        <div class="search-txt row">
+		  <div class="searchbar-wrapper">
+			<div class="search-txt row">
 
-          <div class="searchbox-cnt col-10">
-            <input type="text" class = "search-lightbox" placeholder="what ya looking for?" />
-          </div>
+			  <div class="searchbox-cnt col-10">
+				<input type="text" class = "search-lightbox" placeholder="what ya looking for?" />
+			  </div>
 
-          <div class="searchbox-cnt col-2">
-            <i class="fas fa-search search-ico inline-fa-searchbox fas-global-ico" style="color:#939393;font-size: 20px;"></i>
-          </div>
+			  <div class="searchbox-cnt col-2">
+				<i class="fas fa-search search-ico inline-fa-searchbox fas-global-ico" style="color:#939393;font-size: 20px;"></i>
+			  </div>
 
-        </div>
-      </div>
+			</div>
+		  </div>
 
 		</div>
+		
+	</div>
+	
+	
+	<div class="category-list-wrapper container-fluid">
+		
+		<div class="cat-list-inline-container row">
+			
+			<div class="col-2">&nbsp;</div>
+			
+			<div class="cat-wrap-item col-2 row">
+				<div class="cat-ico col-2">
+					<i class="fas fa-film fa-2x"></i>
+				</div>
+				<div class="cat-label col-10">
+					Movies
+				</div>
+			</div>
 
+			<div class="cat-wrap-item col-2 row">
+				<div class="cat-ico col-2">
+					<i class="fas fa-tv fa-2x"></i>
+				</div>
+				<div class="cat-label col-10">
+					TV Shows
+				</div>
+			</div>
 
+			<div class="cat-wrap-item col-2 row">
+				<div class="cat-ico col-2">
+					<i class="fas fa-flushed fa-2x"></i>
+				</div>
+				<div class="cat-label col-10">
+					Anime
+				</div>
+			</div>
 
-
+			<div class="cat-wrap-item col-2 row">
+				<div class="cat-ico col-2">
+					<i class="fas fa-paw fa-2x"></i>
+				</div>
+				<div class="cat-label col-10">
+					Animation
+				</div>
+			</div>
+			
+		</div>
+		
+		
 	</div>
 
 </body>

@@ -37,7 +37,8 @@ a:active{text-decoration: none;color: none;}
 {
 	width: 100%;
 	height: auto;
-	padding-bottom: 40px;
+	z-index: 99;
+	position: relative;
 }
 
 .header-wrapper
@@ -207,3 +208,40 @@ a:active{text-decoration: none;color: none;}
 
 .google-auth{background: #FF3A3D; }
 .facebook-auth{background: #2D8DFF;}
+
+
+.category-list-wrapper
+{
+	background: #3fc3fe;
+	padding: 30px;
+	z-index: 1;
+	position: relative;
+	color: #fff;
+	display: none;
+}
+
+.cat-list-inline-container
+{
+	width: 100%;
+	margin-left: 5% !important;
+}
+
+.cat-label
+{
+	font-family: 'Chakra Petch', sans-serif;
+	font-size: 20px;
+}
+
+.cat-wrap-item:hover
+{
+	color: rgba(0,0,0,0.5) !important;
+	text-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+
+
+
+
+
+

@@ -6,7 +6,17 @@ Date : 19 Oct 2018
 
 */
 
-angular.module('BingeBuffer',[]).controller('globalIcoController',['$scope', function($scope){
+var bingeBufferApp = angular.module('BingeBuffer',[]);
+
+bingeBufferApp.controller('menuController',['$scope', function($scope){
+	
+	$scope.catListToggle = function() {
+		$('.category-list-wrapper').toggle("slide", {direction: 'up'}, 300);
+	};
+	
+}]);
+
+bingeBufferApp.controller('globalIcoController',['$scope', function($scope){
 	$scope.toggleSearchbar = function(){
 		
 		
