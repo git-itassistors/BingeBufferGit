@@ -6,10 +6,9 @@ Date : 19 Oct 2018
 
 */
 
-angular.module('BingeBuffer',[]).controller('searchController',['$scope', function($scope){
+angular.module('BingeBuffer',[]).controller('globalIcoController',['$scope', function($scope){
 	$scope.toggleSearchbar = function(){
 		
-		console.log($scope.switchSearch);
 		
 		$('.searchbar-wrapper').slideToggle(500);
 		
@@ -22,8 +21,25 @@ angular.module('BingeBuffer',[]).controller('searchController',['$scope', functi
 		{
 			$('.outer-search-ico').attr('style','color: #939393');
 			$scope.switchSearch = undefined;
-			console.log($scope.switchSearch);
 		}
 		
 	};
+	
+	$scope.toggleAuthBubble = function() {
+	
+		$('.auth-bubble').slideToggle(500);
+		
+		if( $scope.authSwitch == undefined )
+		{
+			$('.user-ico').attr('style','color: #2873FF');
+			$scope.authSwitch = 0;
+		}
+		else if( $scope.authSwitch == 0 )
+		{
+			$('.user-ico').attr('style','color: #939393');
+			$scope.authSwitch = undefined;
+		}
+	
+	};
 }]);
+

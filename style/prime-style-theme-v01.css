@@ -149,3 +149,61 @@ a:active{text-decoration: none;color: none;}
 	height: auto;
 	background: #f2f2f2;
 }
+
+.auth-bubble
+{
+	margin-top: 60px;
+	margin-left: 150px !important;
+	position: absolute;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+	width: 75% !important;
+	height: auto;
+	border-radius: 0px 0px 20px 20px;
+	display: none;
+}
+
+.global-auth-wrapper
+{
+	display: inline-flex;
+	margin-bottom: 20px;
+	padding-left: 30px !important;
+	border-radius: 50px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	border: none;
+	cursor: pointer;
+}
+
+.global-auth-wrapper:hover
+{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	
+	filter: brightness(1.2);
+}
+
+.global-auth-ico
+{
+	margin-left: -20px;
+}
+
+
+.auth-label
+{
+	white-space: nowrap;
+	padding-left: 10px;
+	color: #fff;
+}
+
+.google-auth, .facebook-auth
+{
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+	margin-left: 0% !important;
+}
+
+.google-auth{background: #FF3A3D; }
+.facebook-auth{background: #2D8DFF;}

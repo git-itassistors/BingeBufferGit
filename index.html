@@ -7,8 +7,9 @@
   	<link rel = "stylesheet" href="style/prime-style-theme-v01.css">
 	<link rel="icon" href="assets/favicon.png">
   	<link rel="stylesheet" href="style/bootstrap.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	
 	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -52,20 +53,36 @@
 					<li>LATEST DROPS</li>
 				</ul>
 
-				<div class="action-ico-container col-2 mr-ml-6">
+				<div class="action-ico-container col-2 mr-ml-6" ng-controller="globalIcoController">
 
-					<div class="global-ico-wrapper row" ng-controller="searchController">
+					<div class="global-ico-wrapper row">
 
 						<div class="dummy-col col-6 mr-ml-6">&nbsp;</div>
 
-						<div class="g-ico-x col-3 search-toggle" ng-click="toggleSearchbar()" ng-init="siwtchSearch=1">
+						<div class="g-ico-x col-3 search-toggle" ng-click="toggleSearchbar()">
 							<i class="fas fa-search fa-2x search-ico fas-global-ico outer-search-ico" style="color:#939393;"></i>
 						</div>
 
-						<div class="g-ico-x col-1">
-							<i class="fas fa-user fa-2x user-ico fas-global-ico" style="color:#939393;"></i>
+						<div class="g-ico-x col-1" ng-click="toggleAuthBubble()">
+							<i class="fas fa-user fa-2x user-ico fas-global-ico" style="color:#939393;"></i>						
 						</div>
-
+						
+						<div class="auth-bubble container">
+							
+							<div class="global-auth-wrapper google-auth row">
+								<div class="global-auth-ico google-ico col-1">
+									<i class="fab fa-google" style="color: #fff;"></i>
+								</div>
+								<div class="auth-label google-auth-label col-1">Google</div>
+							</div>	
+							<div class="global-auth-wrapper facebook-auth row">
+								<div class="global-auth-ico facebook-auth-ico col-2">
+									<i class="fab fa-facebook-f" style="color: #fff;"></i>
+								</div>
+								<div class="auth-label facebook-auth-label col-3">facebook</div>
+							</div>
+							
+						</div>
 
 					</div>
 
