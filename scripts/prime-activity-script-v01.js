@@ -6,26 +6,24 @@ Date : 19 Oct 2018
 
 */
 
-$(document).ready( function() {
-
-	$('.search-ico').ready( function() {
-		$('.search-ico').click( function() {
-			$('.searchbar-wrapper').slideDown();
-			$('.searchbar-wrapper').fadeIn(500);
-			$('.outer-search-ico').hide();
-
-			$('.outer-search-ico').replaceWith('<i class="fas search-ico fas-global-ico close-searchbar fa-2x fa-times" style="color:#939393;" onclick="closeSearch()"></i>');
-
-		});
-	});
-
-});
-
-
-function closeSearch()
-{
-	console.log("IN");
-	$('.searchbar-wrapper').slideUp();
-	$(".searchbar-wrapper").fadeOut();
-	$('.close-searchbar').replaceWith('<i class="fas fa-search fa-2x search-ico fas-global-ico outer-search-ico" style="color:#939393;"></i>');
-}
+angular.module('BingeBuffer',[]).controller('searchController',['$scope', function($scope){
+	$scope.toggleSearchbar = function(){
+		
+		console.log($scope.switchSearch);
+		
+		$('.searchbar-wrapper').slideToggle(500);
+		
+		if( $scope.switchSearch == undefined )
+		{
+			$('.outer-search-ico').attr('style','color: #FF2F52');
+			$scope.switchSearch = 0;
+		}
+		else if( $scope.switchSearch == 0 )
+		{
+			$('.outer-search-ico').attr('style','color: #939393');
+			$scope.switchSearch = undefined;
+			console.log($scope.switchSearch);
+		}
+		
+	};
+}]);

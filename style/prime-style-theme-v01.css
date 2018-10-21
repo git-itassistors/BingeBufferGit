@@ -119,7 +119,6 @@ a:active{text-decoration: none;color: none;}
 
 .searchbar-wrapper
 {
-	transition: all 0.2s;
 	width: 30%;
 	margin-left: auto;
 	margin-right: auto;
