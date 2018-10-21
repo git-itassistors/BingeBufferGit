@@ -14,7 +14,7 @@ bingeBufferApp.controller('globalController', ['$scope', function($scope){
 		
 		if( bundle == 'searchSwitch' )
 		{
-			$('.searchbar-wrapper').slideToggle(500);
+			$('.searchbar-wrapper').slideToggle(250);
 		
 			if( $scope.switchSearch == undefined )
 			{
