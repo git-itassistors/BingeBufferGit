@@ -158,7 +158,6 @@ a:active{text-decoration: none;color: none;}
 	right: 0;
 	padding-top: 30px;
 	padding-bottom: 10px;
-	text-align: center;
 	background: #fff;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 	width: 20% !important;
@@ -171,46 +170,37 @@ a:active{text-decoration: none;color: none;}
 
 .global-auth-wrapper
 {
-	display: inline-flex;
 	margin-bottom: 20px;
 	padding-left: 30px !important;
 	border-radius: 50px;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 	border: none;
 	cursor: pointer;
+	margin-right: 5px !important;
 }
 
 .global-auth-wrapper:hover
 {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-	
 	filter: brightness(1.2);
 }
 
-.global-auth-ico
-{
-	margin-left: -20px;
-}
-
-
 .auth-label
 {
-	white-space: nowrap;
-	padding-left: 10px;
 	color: #fff;
+	font-size: 18px;
 }
 
-.google-auth, .facebook-auth
+.google-auth, .facebook-auth, .twitter-auth
 {
 	padding: 15px;
-	width: 100%;
-	text-align: center;
+	width: auto;
 	margin-left: 0% !important;
 }
 
 .google-auth{background: #FF3A3D; }
-.facebook-auth{background: #2D8DFF;}
-
+.facebook-auth{background: #3B5998;}
+.twitter-auth{background: #00A3FF;}
 
 .category-list-wrapper
 {
