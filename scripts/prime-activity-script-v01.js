@@ -64,6 +64,9 @@ bingeBufferApp.controller('globalController', ['$scope', function($scope){
 
 
 bingeBufferApp.controller('authController',['$scope', function($scope){
+	
+	
+	
 	firebase.initializeApp(config);
 	$scope.authClick = function(authOption){
 		
@@ -71,7 +74,7 @@ bingeBufferApp.controller('authController',['$scope', function($scope){
 		{
 			var googleProvider = new firebase.auth.GoogleAuthProvider();
 			
-			firebase.auth().signInWithPopup(googleProvider).then( function(result){
+			firebase.auth().signInWithRedirect(googleProvider).then( function(result){
 					console.log(result.credential.accessToken);
 			});
 		}
