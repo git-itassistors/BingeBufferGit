@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   	<title>Binger Buffer - Be a Binge, not a pirate!</title>
   	<link rel = "stylesheet" href="style/prime-style-theme-v01.css">
+	<link rel="stylesheet" href="style/responsive-style-painter.css">
 	<link rel="icon" href="assets/favicon.png">
   	<link rel="stylesheet" href="style/bootstrap.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,12 +49,20 @@
 		<div class="header-wrapper container-fluid" id="head-wrapper">
 
 			<div class="roll-main-cnt container-fluid row" ng-controller="globalController">
+				
+				<div class="col-2 menu-icon-wrapper col-sm-1">
+					<div class="menu-icon">
+						<i class="fas fa-stop fa-stack-2x fa-10x" style="color: #fff; box-shadow: 0px 0px 5px rgba(0,0,0,0.3); border-radius: 10px;"></i>
+						<i class="fas fa-bars fa-stack-1x fa-3x"></i>
+					</div>
+				</div>
+				
 				<div class="col-2 logo-content row mr-md-5 ml-md-5">
 					<div class="logo-wrapper col-xs-6" id="logo-wrapper">&nbsp;</div>
 					<div class="logo-label col-xs-6">inge Buffer</div>
 				</div>
 
-				<ul class="menu-roller col-6 text-center ml-md-5 mr-md-6">
+				<ul class="menu-roller col-6 col-md-6 text-center ml-md-5 mr-md-6">
 					<li class="menu-item hot-menu">HOT NOW</li>
 					<li ng-click="clickActivator('categorySwitch')" class="menu-item category-menu">CATEGORIES &nbsp; <i class="fas fa-angle-down"></i></li>
 					<li class="menu-item trend-menu">TOPPERS</li>

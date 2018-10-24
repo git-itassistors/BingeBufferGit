@@ -1,0 +1,84 @@
+/*
+
+Theme Name: BingerBloat;
+Version: 1.0.1;
+Year: Oct,2018;
+Responsive Dependency: import(responsive-style-painter.css);
+
+*/
+
+
+@media only screen and (max-width: 1475px){
+	
+	.logo-content
+	{
+		margin-top: 5px;
+	}
+	
+	.logo-wrapper
+	{
+		background-size: 35px 60px;
+	}
+	
+	.logo-label
+	{
+		font-size: 38px;
+		margin-top: 40px;
+		margin-left: -5px !important;
+		margin-right: -500px !important;
+	}
+	
+	.menu-item
+	{		
+		font-size: 18px !important;
+	}
+	
+	.global-ico-wrapper
+	{
+		margin-top: -10px !important;
+	}
+	
+}
+
+@media only screen and (max-width: 1325px){
+
+	.menu-roller
+	{
+		display: none;
+	}
+	
+	.menu-icon-wrapper
+	{
+		display: block;
+	}
+	
+	.logo-content
+	{
+		margin-left: 20% !important;
+	}
+	
+	.logo-wrapper
+	{
+		background: url('../assets/logo.png');
+		width: 40px;
+		height: 70px;
+		background-repeat: no-repeat;
+		background-size: 90% 90%;
+		margin-top: 20px;
+		padding: 20px !important;
+	}
+
+	.logo-label
+	{
+		margin-top: 31px;
+		margin-left: -3px !important;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-size: 50px;
+	}
+	
+	.user-ico
+	{
+		display: none;
+	}
+
+}

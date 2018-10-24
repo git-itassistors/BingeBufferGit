@@ -3,7 +3,7 @@
 Theme Name: BingerBloat;
 Version: 1.0.1;
 Year: Oct,2018;
-Responsive Dependency: import(responsive-binge.css);
+Responsive Dependency: import(responsive-style-painter.css);
 
 */
 
@@ -46,7 +46,7 @@ a:active{text-decoration: none;color: none;}
 	width: 100%;
 	height: auto;
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
@@ -67,6 +67,16 @@ a:active{text-decoration: none;color: none;}
 	margin-left: 0px !important;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 50px;
+}
+
+.menu-icon-wrapper
+{
+	display: none;
+}
+
+.menu-icon
+{
+	margin-top: 120px !important;
 }
 
 .menu-roller
