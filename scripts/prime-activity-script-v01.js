@@ -78,7 +78,7 @@ bingeBufferApp.controller('authController',['$scope', function($scope){
 			googleProvider.addScope("https://www.googleapis.com/auth/userinfo.email");
 			
 			firebase.auth().signInWithRedirect(googleProvider).then( function(result){
-					console.log(result.credential.accessToken);
+					console.log(firebase.UserInfo.displayName);
 			});
 		}
 		
