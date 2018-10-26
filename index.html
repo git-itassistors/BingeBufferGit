@@ -17,6 +17,10 @@
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="scripts/jquery-ui.js"></script>
+	
+	<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
 	<script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
@@ -46,40 +50,37 @@
 <body ng-app="BingeBuffer">
 
 	<div class="header-navbar">
-		<div class="header-wrapper container-fluid" id="head-wrapper">
+		<div class="header-wrapper" id="head-wrapper">
 
-			<div class="roll-main-cnt container-fluid row" ng-controller="globalController">
+			<div class="roll-main-cnt container-fluid  navbar navbar-expand-lg" ng-controller="globalController">
 				
-				<div class="col-2 menu-icon-wrapper col-sm-1">
+				<div class="menu-icon-wrapper">
 					<div class="menu-icon">
-						<i class="fas fa-stop fa-stack-2x fa-10x" style="color: #fff; box-shadow: 0px 0px 5px rgba(0,0,0,0.3); border-radius: 10px;"></i>
-						<i class="fas fa-bars fa-stack-1x fa-3x"></i>
+						<img src="assets/menu_bars.svg" width="35px" height="35px" alt="Menu Icon">
 					</div>
 				</div>
 				
-				<div class="col-2 logo-content row mr-md-5 ml-md-5">
-					<div class="logo-wrapper col-xs-6" id="logo-wrapper">&nbsp;</div>
-					<div class="logo-label col-xs-6">inge Buffer</div>
+				
+				<div class="logo-content navbar-brand mr-auto">
+					<div class="logo-wrapper" id="logo-wrapper">&nbsp;</div>
 				</div>
 
-				<ul class="menu-roller col-6 col-md-6 text-center ml-md-5 mr-md-6">
-					<li class="menu-item hot-menu">HOT NOW</li>
-					<li ng-click="clickActivator('categorySwitch')" class="menu-item category-menu">CATEGORIES &nbsp; <i class="fas fa-angle-down"></i></li>
-					<li class="menu-item trend-menu">TOPPERS</li>
-					<li class="menu-item latest-menu">LATEST DROPS</li>
+				<ul class="menu-roller navbar-nav justify-content-center mr-auto">
+					<li class="menu-item hot-menu nav-item">HOT NOW</li>
+					<li ng-click="clickActivator('categorySwitch')" class="menu-item category-menu nav-item">CATEGORIES &nbsp; <i class="fas fa-angle-down"></i></li>
+					<li class="menu-item trend-menu nav-item">TOPPERS</li>
+					<li class="menu-item latest-menu nav-item">LATEST DROPS</li>
 				</ul>
 
-				<div class="action-ico-container col-2 mr-ml-6">
+				<div class="action-ico-container">
 
-					<div class="global-ico-wrapper row">
+					<div class="global-ico-wrapper navbar-nav">
 
-						<div class="dummy-col col-6 mr-ml-6">&nbsp;</div>
-
-						<div class="g-ico-x col-3 search-toggle" ng-click="clickActivator('searchSwitch')">
+						<div class="g-ico-x search-toggle nav-item" ng-click="clickActivator('searchSwitch')">
 							<i class="fas fa-search fa-2x search-ico fas-global-ico outer-search-ico" style="color:#939393;"></i>
 						</div>
 
-						<div class="g-ico-x col-1" ng-click="clickActivator('authSwitch')">
+						<div class="g-ico-x nav-item" ng-click="clickActivator('authSwitch')">
 							<i class="fas fa-user fa-2x user-ico fas-global-ico" style="color:#939393;"></i>						
 						</div>
 
@@ -120,7 +121,7 @@
 			<div class="global-auth-ico facebook-auth-ico col-1">
 				<i class="fab fa-facebook-f fa-lg auth-fa-icon" style="color: #fff;"></i>
 			</div>
-			<div class="dummy-col col-1" style="padding-left: 10px; border-right: dotted 1px #fff;">&nbsp;</div>
+			<div class="dummy-auth-col col-1" style="padding-left: 10px; border-right: dotted 1px #fff;">&nbsp;</div>
 			<div class="auth-label facebook-auth-label col-7">facebook</div>
 		</div>
 		
@@ -128,7 +129,7 @@
 			<div class="global-auth-ico twitter-auth-ico col-1">
 				<i class="fab fa-twitter fa-lg auth-fa-icon" style="color: #fff;"></i>
 			</div>
-			<div class="dummy-col col-1" style="padding-left: 10px; border-right: dotted 1px #fff;">&nbsp;</div>
+			<div class="dummy-auth-col col-1" style="padding-left: 10px; border-right: dotted 1px #fff;">&nbsp;</div>
 			<div class="auth-label twitter-auth-label col-7">twitter</div>
 		</div>
 
