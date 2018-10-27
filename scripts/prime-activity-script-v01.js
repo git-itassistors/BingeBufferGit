@@ -76,6 +76,17 @@ bingeBufferApp.controller('globalController', ['$scope', function($scope){
 			}
 		}
 		
+		else if( bundle == 'sideMenu' )
+		{
+			$('.side-menu-wrapper').toggle("slide", {direction: 'left'}, 300);
+			
+		}
+		
+		else if( bundle == 'sideCategorySwitch' )
+		{
+			$('.side-cat-wrapper').toggle("slide", {direction: 'up'}, 300);
+		}
+		
 	};
 	
 }]);
@@ -104,6 +115,16 @@ bingeBufferApp.controller('authController',['$scope', function($scope){
 	
 }]);
 
+
+$(window).resize( function(){
+	
+	if( $(window).width() >= 1000 && Modernizr.mq( '(min-width: 1000px)' ) )
+	{
+		$('.side-menu-wrapper').css('display','none');
+	}
+	
+});
+
 /*
 $(document).ready( function(){
 	if( $(window).width() <= 1000 && Modernizr.mq( '(max-width: 1000px)' ) )
@@ -115,17 +136,7 @@ $(document).ready( function(){
 	}
 });
 
-$(window).resize( function(){
-	
-	if( $(window).width() <= 1000 && Modernizr.mq( '(max-width: 1000px)' ) )
-	{
-		$('.auth-bubble').css('display','inline-flex');
-		$('.auth-bubble').hide();
-		
-		console.log("Media");
-	}
-	
-});
+*/
 
 
-*/ 
+

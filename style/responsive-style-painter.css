@@ -114,6 +114,11 @@ Responsive Dependency: import(responsive-style-painter.css);
 		display: block;
 	}
 	
+	.drop-search-bounce
+	{
+		display: block;
+	}
+	
 	.searchbar-wrapper
 	{
 		width: 100%;
