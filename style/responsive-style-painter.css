@@ -7,6 +7,28 @@ Responsive Dependency: import(responsive-style-painter.css);
 
 */
 
+@keyframes search-bounce
+{
+	0%
+	{
+		padding-top: 5px;
+	}
+	50%
+	{
+		padding-top: 0px;
+	}
+	100%
+	{
+		padding-top: 5px;
+	}
+}
+
+
+.bounce-search-arrow
+{
+	animation: search-bounce 1s 5;
+	text-align: center !important;
+}
 
 @media only screen and (max-width: 1375px){
 	
@@ -66,14 +88,25 @@ Responsive Dependency: import(responsive-style-painter.css);
 
 @media only screen and (max-width: 1000px){
 	
+	.header-wrapper
+	{
+		padding: 5px !important;
+		margin: 0px !important;
+	}
+	
 	.menu-roller
 	{
 		display: none !important;
 	}
 	
-	.user-ico
+	.outer-search-ico
 	{
 		display: none !important;
+	}
+	
+	.fa-user
+	{
+		font-size: 36px !important;
 	}
 	
 	.menu-icon-wrapper
@@ -81,16 +114,52 @@ Responsive Dependency: import(responsive-style-painter.css);
 		display: block;
 	}
 	
-	.logo-wrapper
+	.searchbar-wrapper
 	{
-		background-size: 100% 100% !important;
-		width: 150px;
-		height: 70px;
+		width: 100%;
+		margin-left: 20%;
+		right: 0;
+		left: 0;
+		padding: 10px;
+	}
+
+	.search-txt
+	{
+		background: #f2f2f2;
+		border-radius: 20px;
+		width: 60% !important;
 	}
 	
-	.logo-content
+	.auth-bubble
 	{
-		position: absolute !important;
-		left: 35% !important;
+		display: none !important;
 	}
+	
+	.auth-label
+	{
+		display: none;
+	}
+	
+	.action-ico-container
+	{
+		margin: 2px !important;
+		padding: 0px !important;
+	}
+	
+	.fa-user
+	{
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+
+	.inline-fa-searchbox
+	{
+		padding-right: 5px !important;
+	}
+	
+	.fa-search
+	{
+		font-size: 20px !important;
+	}
+	
 }

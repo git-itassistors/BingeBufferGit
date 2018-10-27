@@ -12,6 +12,8 @@ bingeBufferApp.controller('globalController', ['$scope', function($scope){
 	
 	$scope.clickActivator = function(bundle){
 		
+		console.log("Click Event Triggered");
+		
 		if( bundle == 'searchSwitch' )
 		{
 			$('.searchbar-wrapper').slideToggle(250);
@@ -29,7 +31,23 @@ bingeBufferApp.controller('globalController', ['$scope', function($scope){
 		}
 		else if( bundle == 'authSwitch' )
 		{
-			$('.auth-bubble').slideToggle(250);
+			
+			var authBubble = "";
+			
+			if( $(window).width() <= 1000 )
+			{
+				authBubble = $('.res-auth-primary-wrapper');
+				authBubble.slideToggle(250, function(){
+					authBubble.css('display','flex !important');
+				});
+			}
+			else
+			{
+				authBubble = $('.auth-bubble');
+				authBubble.slideToggle(250);
+			}
+			
+			
 		
 			if( $scope.authSwitch == undefined )
 			{
@@ -86,3 +104,28 @@ bingeBufferApp.controller('authController',['$scope', function($scope){
 	
 }]);
 
+/*
+$(document).ready( function(){
+	if( $(window).width() <= 1000 && Modernizr.mq( '(max-width: 1000px)' ) )
+	{
+		$('.auth-bubble').hide();
+		$('.auth-bubble').css('display','inline-flex');
+
+		console.log("Media");
+	}
+});
+
+$(window).resize( function(){
+	
+	if( $(window).width() <= 1000 && Modernizr.mq( '(max-width: 1000px)' ) )
+	{
+		$('.auth-bubble').css('display','inline-flex');
+		$('.auth-bubble').hide();
+		
+		console.log("Media");
+	}
+	
+});
+
+
+*/ 
