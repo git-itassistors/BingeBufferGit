@@ -119,6 +119,11 @@ Responsive Dependency: import(responsive-style-painter.css);
 		display: block;
 	}
 	
+	.category-list-wrapper
+	{
+		display: none !important;
+	}
+	
 	.searchbar-wrapper
 	{
 		width: 100%;
