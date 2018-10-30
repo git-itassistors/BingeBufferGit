@@ -48,10 +48,6 @@ Responsive Dependency: import(responsive-style-painter.css);
 		padding-right: 50px !important;
 	}
 	
-	.search-txt
-	{
-		width: 350px !important;
-	}
 	
 }
 
@@ -84,6 +80,10 @@ Responsive Dependency: import(responsive-style-painter.css);
 		display: none;
 	}
 
+	.searchbar-wrapper
+	{
+		width: 75%;
+	}
 }
 
 @media only screen and (max-width: 1000px){
@@ -94,12 +94,25 @@ Responsive Dependency: import(responsive-style-painter.css);
 		margin: 0px !important;
 	}
 	
+	.logo-content
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;	
+	}
+	
+	.logo-wrapper
+	{
+		width: 200px;
+		height: 80px;
+	}
+	
 	.menu-roller
 	{
 		display: none !important;
 	}
 	
-	.outer-search-ico
+	.g-ico-x
 	{
 		display: none !important;
 	}
@@ -114,7 +127,7 @@ Responsive Dependency: import(responsive-style-painter.css);
 		display: block;
 	}
 	
-	.drop-search-bounce
+	.float-bubble
 	{
 		display: block;
 	}
@@ -126,18 +139,7 @@ Responsive Dependency: import(responsive-style-painter.css);
 	
 	.searchbar-wrapper
 	{
-		width: 100%;
-		margin-left: 20%;
-		right: 0;
-		left: 0;
-		padding: 10px;
-	}
-
-	.search-txt
-	{
-		background: #f2f2f2;
-		border-radius: 20px;
-		width: 60% !important;
+		width: 90%;
 	}
 	
 	.auth-bubble
@@ -170,6 +172,17 @@ Responsive Dependency: import(responsive-style-painter.css);
 	.fa-search
 	{
 		font-size: 20px !important;
+	}
+	
+}
+
+@media only screen and (max-width: 600px){
+	
+	.logo-content
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;	
 	}
 	
 }

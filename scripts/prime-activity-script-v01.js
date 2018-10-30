@@ -87,6 +87,11 @@ bingeBufferApp.controller('globalController', ['$scope', function($scope){
 			$('.side-cat-wrapper').toggle("slide", {direction: 'up'}, 300);
 		}
 		
+		else if( bundle == 'floatBubble')
+		{
+			$('.float-action-icon-wrapper').toggle("slide", {direction: 'down'}, 300);
+		}
+		
 	};
 	
 }]);

@@ -98,13 +98,13 @@
 			</div>
 			
 			  <div class="searchbar-wrapper">
-				<div class="search-txt row">
+				<div class="search-txt list-inline">
 
-				  <div class="searchbox-cnt col-10">
-					<input type="text" class = "search-lightbox" placeholder="what ya looking for?" />
+				  <div class="searchbox-cnt searchbar-textbox list-inline-item">
+					<input type="text" class = "search-lightbox" placeholder="what ya looking for?">
 				  </div>
 
-				  <div class="searchbox-cnt col-2">
+				  <div class="searchbox-cnt searchbar-action-ico list-inline-item">
 					<i class="fas fa-search search-ico inline-fa-searchbox fas-global-ico" style="color:#939393;font-size: 20px;"></i>
 				  </div>
 
@@ -115,41 +115,62 @@
 		
 	</div>
 	
+	<div class="float-bubble">
+		
+		<div class="float-action-icon-wrapper">
+			<div class="float-bubble-ico ft-search-bubble-ico" ng-click="clickActivator('searchSwitch')" >&nbsp;</div>	
+			<div class="float-bubble-ico ft-user-bubble-ico" ng-click="clickActivator('authSwitch')">&nbsp;</div>	
+		</div>
+		
+		<div class="float-bubble-dot-wrapper" ng-click="clickActivator('floatBubble')">&nbsp;</div>
+		
+	</div>
+	
 	<div class="side-menu-wrapper">
 	
-		<ul class="side-menu-roller list-inline">
-			<li class="hot-menu side-menu-item">HOT NOW</li>
-			<li ng-click="clickActivator('sideCategorySwitch')" class="category-menu side-menu-item">CATEGORIES &nbsp; <i class="fas fa-angle-down"></i>
-				
-				<div class="side-cat-wrapper container-fluid">
-					<div class="side-cat-list-inline-container container">
+		
+		<div class="side-menu-inline-container">
+			<div class="sidenav-userdata-wrapper">
+				<div class="sidenav-user-ico img-responsive">&nbsp;</div>
+				<div class="sidenav-user-name">User Name</div>
+			</div>
 
-						<div class="side-cat-wrap-item list-inline">
-							<i class="fas fa-film fa-1x"></i>
-							<div class="list-inline-item side-cat-label">Movies</div>
-						</div>
+			<ul class="side-menu-roller list-inline">
+				<li class="hot-menu side-menu-item">HOT NOW</li>
+				<li ng-click="clickActivator('sideCategorySwitch')" class="side-menu-item">CATEGORIES &nbsp; <i class="fas fa-angle-down"></i>
 
-						<div class="side-cat-wrap-item list-inline">
-							<i class="fas fa-tv fa-1x"></i>
-							<div class="list-inline-item side-cat-label">TV Shows</div>
-						</div>
+					<div class="side-cat-wrapper">
+						<div class="side-cat-list-inline-container container">
 
-						<div class="side-cat-wrap-item list-inline">
-							<i class="fas fa-flushed fa-1x"></i>
-							<div class="list-inline-item side-cat-label">Anime</div>
-						</div>
+							<div class="side-cat-wrap-item list-inline">
+								<i class="fas fa-film fa-1x"></i>
+								<div class="list-inline-item side-cat-label">Movies</div>
+							</div>
 
-						<div class="side-cat-wrap-item list-inline">
-							<i class="fas fa-paw fa-1x"></i>
-							<div class="list-inline-item side-cat-label">Animation</div>
+							<div class="side-cat-wrap-item list-inline">
+								<i class="fas fa-tv fa-1x"></i>
+								<div class="list-inline-item side-cat-label">TV Shows</div>
+							</div>
+
+							<div class="side-cat-wrap-item list-inline">
+								<i class="fas fa-flushed fa-1x"></i>
+								<div class="list-inline-item side-cat-label">Anime</div>
+							</div>
+
+							<div class="side-cat-wrap-item list-inline">
+								<i class="fas fa-paw fa-1x"></i>
+								<div class="list-inline-item side-cat-label">Animation</div>
+							</div>
+
 						</div>
 					</div>
-				</div>
-				
-			</li>
-			<li class="trend-menu side-menu-item">TOPPERS</li>
-			<li class="latest-menu side-menu-item">LATEST DROPS</li>
-		</ul>
+
+				</li>
+				<li class="trend-menu side-menu-item">TOPPERS</li>
+				<li class="latest-menu side-menu-item">LATEST DROPS</li>
+			</ul>
+		</div>
+		
 	
 	</div>
 	
